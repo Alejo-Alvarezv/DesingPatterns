@@ -16,6 +16,8 @@ These patterns provide various object creation mechanisms, which increase flexib
     - Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
     - Creates an instance of several derived classes
 
+        [See more information](https://github.com/alejoalvarez/Design-Patterns/blob/master/Factory-Method.md)
+
 - **Abstract Factory**
     
     - Lets you produce families of related objects without specifying the concrete classes
