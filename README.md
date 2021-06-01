@@ -23,6 +23,8 @@ These patterns provide various object creation mechanisms, which increase flexib
     - Lets you produce families of related objects without specifying the concrete classes
     - Creates an instance of several families of classes
 
+        [See more information](https://github.com/alejoalvarez/Design-Patterns/blob/master/Abstract-Factory.md)
+
 - **Builder**
 
     - Let you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
