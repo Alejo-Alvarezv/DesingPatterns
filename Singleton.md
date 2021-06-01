@@ -41,6 +41,8 @@ If your code has access to the Singleton class, then it’s able to call the Sin
 
 The government is an excellent example of the Singleton pattern. A country can have only one official government. Regardless of the personal identities of the individuals who form governments, the title, “The Government of X”, is a global point of access that identifies the group of people in charge.
 
+## Structure
+
 <p align="center">
 <img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/singleton2.png">
  </p>
