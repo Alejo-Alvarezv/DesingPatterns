@@ -87,3 +87,18 @@ Implement “lazy initialization” inside the static method. It should create a
 Make the constructor of the class private. The static method of the class will still be able to call the constructor, but not the other objects.
 
 Go over the client code and replace all direct calls to the singleton’s constructor with calls to its static creation method.
+
+## Usage
+- Naïve Singleton (single-threaded) [see code example](https://github.com/alejoalvarez/Design-Patterns/tree/master/designpatterns/src/main/java/com/co/alejo/designpatterns/singleton/naivesingleton)
+
+    It’s pretty easy to implement a sloppy Singleton. You just need to hide the constructor and implement a static creation method.
+
+- Naïve Singleton (multithreaded) [see code example](https://github.com/alejoalvarez/Design-Patterns/tree/master/designpatterns/src/main/java/com/co/alejo/designpatterns/singleton/naivesingleton2)
+
+    The same class behaves incorrectly in a multithreaded environment. Multiple threads can call the creation method simultaneously and get several instances of Singleton class.
+
+- Thread-safe Singleton with lazy loading [see code example](https://github.com/alejoalvarez/Design-Patterns/tree/master/designpatterns/src/main/java/com/co/alejo/designpatterns/singleton/naivesingleton3)
+
+    To fix the before problem, you have to synchronize threads during first creation of the Singleton object
+
+    
