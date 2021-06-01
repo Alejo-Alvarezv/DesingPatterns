@@ -121,6 +121,13 @@ For instance, imagine that you have the following hierarchy of classes: the base
 
 ## Pros and Cons
 :white_check_mark: You avoid tight coupling between the creator and the concrete products.
+
 :white_check_mark: Single Responsibility Principle. You can move the product creation code into one place in the program, making the code easier to support.
+
 :white_check_mark: Open/Closed Principle. You can introduce new types of products into the program without breaking existing client code.
-:white_check_mark: The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern. The best case scenario is when you’re introducing the :x: pattern into an existing hierarchy of creator classes.
+
+:x: The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern. The best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes.
+
+## Usage
+
+[Example](https://github.com/alejoalvarez/Design-Patterns/tree/master/designpatterns/src/main/java/com/co/alejo/designpatterns/factorymethod)
