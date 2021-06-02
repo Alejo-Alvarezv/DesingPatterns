@@ -7,7 +7,7 @@ Provides an interface for creating objects in a superclass, but allows subclasse
 Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/factory-method1.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120505229-673ebc80-c38a-11eb-980c-a5c38cfce546.png">
 </p>
 
 ## Problem
@@ -17,7 +17,7 @@ Imagine that you’re creating a logistics management application. The first ver
 After a while, your app becomes pretty popular. Each day you receive dozens of requests from sea transportation companies to incorporate sea logistics into the app.
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/factory-method2.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120505328-7d4c7d00-c38a-11eb-82fa-1da240a6a35e.png">
 </p>
 
 ```Adding a new class to the program isn’t that simple if the rest of the code is already coupled to existing classes.```
@@ -31,7 +31,7 @@ As a result, you will end up with pretty nasty code, riddled with conditionals t
 The Factory Method pattern suggests that you replace direct object construction calls (using the new operator) with calls to a special factory method. Don’t worry: the objects are still created via the new operator, but it’s being called from within the factory method. Objects returned by a factory method are often referred to as products.
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/factory-method3.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120505385-8b9a9900-c38a-11eb-8dab-ecedadd1e408.png">
 </p>
 
 ```Subclasses can alter the class of objects being returned by the factory method.```
@@ -41,7 +41,7 @@ At first glance, this change may look pointless: we just moved the constructor c
 There’s a slight limitation though: subclasses may return different types of products only if these products have a common base class or interface. Also, the factory method in the base class should have its return type declared as this interface
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/factory-method4.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120505442-98b78800-c38a-11eb-84d7-f5cda734e96a.png">
 </p>
 
 ```All products must follow the same interface.```
@@ -49,7 +49,7 @@ There’s a slight limitation though: subclasses may return different types of p
 For example, both ```Truck``` and ```Ship``` classes should implement the ```Transport``` interface, which declares a method called ```deliver```. Each class implements this method differently: trucks deliver cargo by land, ships deliver cargo by sea. The factory method in the ```RoadLogistics``` class returns truck objects, whereas the factory method in the ```SeaLogistics``` class returns ships.
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/factory-method5.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120505497-a4a34a00-c38a-11eb-8a86-e65a1f2119ff.png">
 </p>
 
 ```As long as all product classes implement a common interface, you can pass their objects to the client code without breaking it.```
@@ -59,7 +59,7 @@ The code that uses the factory method (often called the client code) doesn’t s
 ## Structure
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/factory-method6.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120505560-b08f0c00-c38a-11eb-9124-acb90c82b707.png">
 </p>
 
 1. The Product declares the interface, which is common to all objects that can be produced by the creator and its subclasses.
