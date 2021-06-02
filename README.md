@@ -95,7 +95,7 @@ These patterns explain how to assemble objects and classes into larger structure
 ## Behavioral patterns
 These patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
-### ```Observer```
+### ```Observer```
 
 - A way of notifying change to a number of classes
 - Lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they're observing.
