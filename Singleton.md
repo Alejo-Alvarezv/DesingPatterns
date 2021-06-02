@@ -1,3 +1,4 @@
+
 # Singleton
 
 Lets you ensure that a class has only one instance while providing a global access point to this instance.
@@ -6,12 +7,8 @@ Lets you ensure that a class has only one instance while providing a global acce
 Singleton is a **creational design pattern** that lets you ensure that a class has only one instance, while providing a global access point to this instance.
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/singleton1.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120504251-999bea00-c389-11eb-97d9-d25b75836f5d.png">
  </p>
-
-<p align="center">
-Image Taken from https://refactoring.guru/
-</p>
 
 ## Problem
 
@@ -44,7 +41,7 @@ The government is an excellent example of the Singleton pattern. A country can h
 ## Structure
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/DesignPatterns/singleton2.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120504486-cb14b580-c389-11eb-9884-2f4dad7ef3e1.png">
  </p>
 
 The Singleton class declares the static method getInstance that returns the same instance of its own class.
