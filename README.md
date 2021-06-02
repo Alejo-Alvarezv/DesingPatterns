@@ -29,6 +29,8 @@ These patterns provide various object creation mechanisms, which increase flexib
 - Let you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 - Separates object construction from its representation
 
+    [See more information](https://github.com/alejoalvarez/Design-Patterns/blob/master/Builder.md)
+
 ### ```Prototype```
 
 - Lets you copy exist objects without making your code dependent on their classes.
