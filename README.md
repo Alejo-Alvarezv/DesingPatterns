@@ -36,6 +36,8 @@ These patterns provide various object creation mechanisms, which increase flexib
 - Lets you copy exist objects without making your code dependent on their classes.
 - A fully initialized instance to be copied or cloned
 
+    [See more information](https://github.com/alejoalvarez/Design-Patterns/blob/master/Prototype.md)
+
 ### ```Singleton```
 
 - Lets you ensure that a class has only one instance while providing a global access point to this instance.
